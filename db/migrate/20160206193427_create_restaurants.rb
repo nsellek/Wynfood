@@ -6,7 +6,7 @@ class CreateRestaurants < ActiveRecord::Migration
       t.string :food
       t.string :address
       t.float :raiting
-      t.string :description
+      t.text :description
 
       t.timestamps null: false
     end
