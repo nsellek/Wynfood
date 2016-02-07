@@ -21,8 +21,8 @@
 </p>
 
 <p>
-  <strong>Raiting:</strong>
-  <%= @restaurant.raiting %>
+  <strong>Rating:</strong>
+  <%= @restaurant.reviews.average(:raiting).to_f %>
 </p>
 
 <p>

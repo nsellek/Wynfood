@@ -1,8 +1,11 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Wynfood</h1>
-<h2>This is your list of Restaurants</h2>
-<br>
+<% @restaurants.order(:price) %>
+
+
+
+
+
+
 <table>
   <thead>
     <tr>
@@ -23,6 +26,7 @@
         <td><%= restaurant.price %></td>
         <td><%= restaurant.food %></td>
         <td><%= restaurant.address %></td>
+        <td><%= restaurant.raiting %></td>
         <td><%= restaurant.description %></td>
         <td><%= link_to 'Show', restaurant %></td>
         <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
@@ -31,7 +35,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Restaurant', new_restaurant_path %>
