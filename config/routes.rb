@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   resources :reviews
   resources :restaurants
-  root 'restaurants#index'
+  root 'restaurants#home'
 
   get 'review' => 'review#index'
   # root 'welcome#index'
