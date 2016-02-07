@@ -1,11 +1,11 @@
 
 header {
-  height:150em;
+  height:50em;
 }
 
 body {
 background: url("https://images.unsplash.com/photo-1430931071372-38127bd472b8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e38011b03de532fe2203de8e4696d357");
-background-size: 100%;
+background-size: cover;
 background-repeat: no-repeat;
 width: 100%;
 }
@@ -33,12 +33,16 @@ margin-bottom: 30px;
   margin-left: 200px;
 }
 
+.sort_button :hover {
+  color: black;
+}
+
 .sort_button_price {
   float:left;
   margin-right: 40px;
 }
 .sort_button_rating {
-  margin-left: 150px;
+  margin-left: 110px;
 }
 .random_text {
   font-size: 30px;
@@ -47,18 +51,29 @@ margin-bottom: 30px;
 }
 
 .random_button {
- margin-left: 235px;
+ margin-left: 225px;
 }
 
+.random_button :hover {
+  color: black;
+}
 
+.diner_button {
+  margin-top: 35px;
+  margin-left: 225px;
+}
+
+.diner_button :hover {
+  color: black;
+}
 /******************************************
 SECTION
 ******************************************/
-section {
+/*section {
 background-color: white;
 height: 400px;
 width: 100%;
-}
+}*/
 
 
 
@@ -66,12 +81,12 @@ width: 100%;
 FOOTER
 ******************************************/
 
- footer {
+ /*footer {
   background-color: black;
   height: 500px;
   width: 100%;
   /*margin-top: 122em;*/
-}
+
 
 
 
