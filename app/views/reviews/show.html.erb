@@ -7,8 +7,12 @@
 
 <p>
   <strong>Restaurant:</strong>
-  <%= @review.restaurant_id %>
+  <%= @review.restaurant.name %>
 </p>
 
 <%= link_to 'Edit', edit_review_path(@review) %> |
-<%= link_to 'Back', reviews_path %>
+<% if @review.restaurant.nil? %>
+  <%= link_to 'Back', reviews_path %>
+<% else %>
+  <%= link_to 'Back', @review.restaurant %>
+<% end %>
