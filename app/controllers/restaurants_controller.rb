@@ -62,6 +62,10 @@ class RestaurantsController < ApplicationController
     end
   end
 
+  def home
+    @restaurant_id = Restaurant.all.sample.id
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_restaurant
