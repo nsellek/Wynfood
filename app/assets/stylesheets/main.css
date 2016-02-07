@@ -1,8 +1,13 @@
 
+header {
+  height:150em;
+}
+
 body {
 background: url("https://images.unsplash.com/photo-1430931071372-38127bd472b8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e38011b03de532fe2203de8e4696d357");
-/*height: 600px;*/
 background-size: 100%;
+background-repeat: no-repeat;
+width: 100%;
 }
 
 
@@ -12,27 +17,48 @@ background-size: 100%;
 h1 {
   color: white;
   font-size: 150px;
-  font-style: '';
+  text-align: center;
 }
-/*
-hr {
-width: : 3px;
-}*/
 
-p {
+
+.sort_text {
 font-size: 50px;
 color: white;
+float: left;
+margin-bottom: 30px;
 }
 
-.button_possition {
-  float:left;
+.sort_button {
+  margin-top: 25px;
+  margin-left: 200px;
 }
+
+.sort_button_price {
+  float:left;
+  margin-right: 40px;
+}
+.sort_button_rating {
+  margin-left: 150px;
+}
+.random_text {
+  font-size: 30px;
+  color: white;
+  margin-top: 400px;
+}
+
+.random_button {
+ margin-left: 235px;
+}
+
 
 /******************************************
-
+SECTION
 ******************************************/
-
-
+section {
+background-color: white;
+height: 400px;
+width: 100%;
+}
 
 
 
@@ -40,7 +66,12 @@ color: white;
 FOOTER
 ******************************************/
 
-
+ footer {
+  background-color: black;
+  height: 500px;
+  width: 100%;
+  /*margin-top: 122em;*/
+}
 
 
 
