@@ -32,6 +32,10 @@
     <%= f.label :description %><br>
     <%= f.text_field :description, :class=> "diner_input"  %>
   </div>
+  <div class='field'>
+    <%= f.label :picture %><br>
+    <%= f.text_field :url, :class => 'diner_input' %>
+  </div>
   <div class="actions">
     <%= f.submit 'Add Diner', :class=> "btn btn-info btn-lg" %>
   </div>
