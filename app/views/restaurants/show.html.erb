@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<<<<<<< HEAD
 <div class="asset_style">
   <hr>
     <p>
@@ -36,6 +37,39 @@
 
 
 <h3 class= "review">Reviews:</h3>
+=======
+<p>
+  <strong>Name:</strong>
+  <%= @restaurant.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @restaurant.price %>
+</p>
+
+<p>
+  <strong>Food:</strong>
+  <%= @restaurant.food %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @restaurant.address %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @restaurant.reviews.average(:raiting).to_f %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @restaurant.description %>
+</p>
+
+<h3>Reviews:</h3>
+>>>>>>> fb0ddae11bb6996aa5b62a889dcb134cafa813c2
 
  <% @restaurant.reviews.each do |review| %>
   <p>
