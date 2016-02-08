@@ -1,37 +1,56 @@
 <p id="notice"><%= notice %></p>
 
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
 <h1>Wynfood</h1>
 <h2>This is your list of Restaurants</h2>
 <br>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Food</th>
-      <th>Address</th>
-      <th>Raiting</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  <div>
     <% @restaurants.each do |restaurant| %>
-      <tr>
-        <td><%= restaurant.name %></td>
+      <div>
+
+         <a href="#"><img src="http://gdurl.com/XmC2" alt="Arabian Knife" />
+          <h3>Arabian Knife</h3></a>
+          <!-- <a href="#"><img src="http://gdurl.com/xG87" alt="Butcher Shop" />
+            <h3>Butcher Shop</h3></a>
+          <a href="#"><img src="http://gdurl.com/68Dp" alt="Coyo" />
+            <h3>Coyo</h3></a>
+          <a href="#"><img src="http://gdurl.com/S5my" alt="Della" />
+            <h3>Della Test Kitchen</h3></a>
+          <a href="#"><img src="http://gdurl.com/8--7" alt="Freshii" />
+            <h3><abbr title="Freshii"></abbr> Freshii</h3></a>
+          <a href="#"><img src="http://gdurl.com/uFUt" alt="Jimmy'z Kitchen"/>
+            <h3>Jimmy'z Kitchen</h3></a>
+          <a href="#"><img src="http://gdurl.com/yQMI" alt="Jucy Lu" />
+            <h3>Jucy Lu</h3></a>
+          <a href="#"><img src="http://gdurl.com/yk0V" alt="Jugo Fresh" />
+            <h3>Jugo Fresh</h3></a>
+          <a href="#"><img src="http://gdurl.com/Hd59" alt="Miami Cafe Boutqiue" />
+            <h3>Miami Cafe Boutique</h3></a>
+          <a href="#"><img src="http://gdurl.com/Q85O" alt="Pancho Taco" />
+            <h3>Pancho Taco</h3></a>
+          <a href="#"><img src="http://gdurl.com/fz2S" alt="Subs on the Run" />
+            <h3>Subs on the Run</h3></a>
+          <a href="#"><img src="http://gdurl.com/2GV9" alt="Suviche" />
+            <h3>Suviche</h3></a>
+          <a href="#"><img src="http://gdurl.com/Q6IB" alt="Wynwood Cafe" />
+            <h3>Wynwood Cafe</h3></a>
+          <a href="#"><img src="http://gdurl.com/TuuX" alt="Wynwood Diner" />
+            <h3>Wynwood Diner</h3></a>
+          <a href="#"><img src="http://gdurl.com/kx4S" alt="Zak the Baker" />
+            <h3>Zak the Baker</h3></a> -->
+        <!-- <td><%= restaurant.name %></td>
         <td><%= restaurant.price %></td>
         <td><%= restaurant.food %></td>
         <td><%= restaurant.address %></td>
         <td><%= restaurant.raiting %></td>
-        <td><%= restaurant.description %></td>
-        <td><%= link_to 'Show', restaurant %></td>
+        <td><%= restaurant.description %></td> -->
+        <!-- <td><%= link_to 'Show', restaurant %></td>
         <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
-        <td><%= link_to 'Remove', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <td><%= link_to 'Remove', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
 
 <br>
 
