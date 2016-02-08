@@ -1,20 +1,42 @@
-<p id="notice"><%= notice %></p>
+<body class="white">
+<div class = "restaurants-style">
 
-<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <p id="notice"><%= notice %></p>
 
-<h1>Wynfood</h1>
-<h2>This is your list of Restaurants</h2>
-<br>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+
+  <div class="col-md-6 col-md-offset-3">
+    <hr class= "hr">
+    <h1>Wynfood</h1>
+    <hr>
+  </div>
+<div>
+  <h2></h2>
+  <br>
   <div>
-    <% @restaurants.each do |restaurant| %>
-      <div>
+    <div>
+      <% @restaurants.each do |restaurant| %>
+    </div>
 
-         <a href="#"><img src="http://gdurl.com/XmC2" alt="Arabian Knife" />
-          <h3>Arabian Knife</h3></a>
-      </div>
+    <a href="#"><img src="http://gdurl.com/XmC2" alt="Arabian Knife" />
+      <h3>Arabian Knife</h3></a>
+    </div>
     <% end %>
   </div>
 
-<br>
+</div>
+  <br>
 
-<%= link_to 'New Restaurant', new_restaurant_path %>
+  <div class="col-md-6 col-md-offset-3" class= "buttons">
+    <div class= "restaurant_btn">
+      <%= link_to 'New Restaurant', new_restaurant_path, :class => 'btn btn-info btn-lg' %>
+    </div>
+
+    <div class= "home_btn">
+      <%= link_to 'Home Page', restaurants_path, :class => 'btn btn-info btn-lg' %>
+    </div>
+  </div>
+
+</div>
+</body>
