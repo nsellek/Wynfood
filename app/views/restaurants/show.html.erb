@@ -1,36 +1,41 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @restaurant.name %>
-</p>
+<div class="asset_style">
+  <hr>
+    <p>
+      <strong>Name:</strong>
+      <%= @restaurant.name %>
+    </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @restaurant.price %>
-</p>
+    <p>
+      <strong>Price:</strong>
+      <%= @restaurant.price %>
+    </p>
 
-<p>
-  <strong>Food:</strong>
-  <%= @restaurant.food %>
-</p>
+    <p>
+      <strong>Food:</strong>
+      <%= @restaurant.food %>
+    </p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @restaurant.address %>
-</p>
+    <p>
+      <strong>Address:</strong>
+      <%= @restaurant.address %>
+    </p>
 
-<p>
-  <strong>Raiting:</strong>
-  <%= @restaurant.raiting %>
-</p>
+    <p>
+      <strong>Raiting:</strong>
+      <%= @restaurant.raiting %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @restaurant.description %>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @restaurant.description %>
+    </p>
+    <hr>
+</div>
 
-<h3>Reviews:</h3>
+
+<h3 class= "review">Reviews:</h3>
 
  <% @restaurant.reviews.each do |review| %>
   <p>
@@ -42,8 +47,11 @@
   <br>
   <% end %>
 
-  <h3>New Review</h3>
+  <h3 class= "new_review">New Review</h3>
   <%= render 'reviews/form' %>
 
-<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
-<%= link_to 'Back', restaurants_path %>
+<!-- <div class="col-md-6 col-md-offset-3"> -->
+  <div class= "back_btn">
+      <%= link_to 'Home Page', restaurants_path, :class => 'btn btn-info btn-lg' %>
+  </div>
+</div>

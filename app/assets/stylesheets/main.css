@@ -1,3 +1,6 @@
+/******************************************
+              HEADER
+******************************************/
 
 header {
   height:50em;
@@ -12,12 +15,22 @@ width: 100%;
 background-size: 100%;
 }
 
-h1 {
+ h1, .home_title {
   color: white;
   font-size: 150px;
   text-align: center;
 }
 
+
+.all_button {
+  margin-top: 10px;
+  margin-left: 220px;
+  margin-bottom: 20px;
+}
+
+.all_button :hover {
+  color: black;
+}
 
 .sort_text {
 font-size: 50px;
@@ -65,7 +78,7 @@ margin-bottom: 30px;
   color: black;
 }
 /******************************************
-SECTION
+              SECTION
 ******************************************/
 /*section {
 background-color: white;
@@ -76,7 +89,7 @@ width: 100%;
 
 
 /******************************************
-FOOTER
+              FOOTER
 ******************************************/
 
  /*footer {
@@ -89,5 +102,73 @@ FOOTER
 
 
 /******************************************
-
+            NEW DINER'S
 ******************************************/
+
+ h1,  .diner_title {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
+
+.actions {
+font-size: 20px;
+margin-bottom: 15px;
+color: black;
+}
+
+.diner_input {
+color: black;
+}
+
+.field {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: white;
+  margin-top: 25px;
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.new_back {
+  margin-right: 265px;
+}
+
+.back_hover :hover {
+  color: black;
+}
+
+.actions :hover {
+  color: black;
+}
+
+ /******************************************
+              SHOW DINER'S
+ ******************************************/
+
+.asset_style {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 580px;
+ }
+
+.review {
+  color: white;
+  text-align: center;
+}
+
+.new_review {
+color: white;
+text-align: center;
+}
+
+.new_buttons {
+ text-align: center;
+}
+
+
+.back_btn {
+text-align: center;
+}
