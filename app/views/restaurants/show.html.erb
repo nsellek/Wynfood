@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<<<<<<< HEAD
+
 <div class="asset_style">
   <hr>
     <p>
@@ -37,40 +37,7 @@
 
 
 <h3 class= "review">Reviews:</h3>
-=======
-<p>
-  <strong>Name:</strong>
-  <%= @restaurant.name %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @restaurant.price %>
-</p>
-
-<p>
-  <strong>Food:</strong>
-  <%= @restaurant.food %>
-</p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @restaurant.address %>
-</p>
-
-<p>
-  <strong>Rating:</strong>
-  <%= @restaurant.reviews.average(:raiting).to_f %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @restaurant.description %>
-</p>
-
-<h3>Reviews:</h3>
->>>>>>> fb0ddae11bb6996aa5b62a889dcb134cafa813c2
-
+<div class='asset_style'>
  <% @restaurant.reviews.each do |review| %>
   <p>
     <%= review.comment %>
@@ -80,12 +47,15 @@
   </p>
   <br>
   <% end %>
-
+</div>
   <h3 class= "new_review">New Review</h3>
+  <br>
   <%= render 'reviews/form' %>
 
-<!-- <div class="col-md-6 col-md-offset-3"> -->
+  <br>
+
+<div class="col-md-6 col-md-offset-3">
   <div class= "back_btn">
-      <%= link_to 'Home Page', restaurants_path, :class => 'btn btn-info btn-lg' %>
+      <%= button_to 'Home Page', controller: 'restaurants', action: 'home', :method => :get %>
   </div>
 </div>

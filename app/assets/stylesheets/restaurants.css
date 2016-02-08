@@ -1,8 +1,14 @@
-// Place all the styles related to the Restaurants controller here.
+/*// Place all the styles related to the Restaurants controller here.
 // They will automatically be included in application.css.
+<<<<<<< HEAD:app/assets/stylesheets/restaurants.scss
 // You can use Sass (SCSS) here: http://sass-lang.com/
  body.white {
   background-color: #ccc;
+=======
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+body {
+  background-color: white;
+>>>>>>> caf2b6846a8b0bbb8521e91935632ad7b9de83e4:app/assets/stylesheets/restaurants.css
   margin: 0px;
   padding: 0px;
   background: none;
@@ -41,7 +47,6 @@ a {
   vertical-align: middle;
   box-sizing: border-box;
   width: 100%;
-
 }
 
 a:hover img {
@@ -50,7 +55,7 @@ a:hover img {
 }
 
 h3 {
-  position: absolute;
+  /*position: absolute;*/
   top: 35%;
   z-index: 2;
   font-size: 28px;

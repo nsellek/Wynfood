@@ -15,6 +15,7 @@
   <h2></h2>
   <br>
   <div>
+<<<<<<< HEAD
     <div>
       <% @restaurants.each do |restaurant| %>
     </div>
@@ -22,6 +23,13 @@
     <a href="#"><img src="http://gdurl.com/XmC2" alt="Arabian Knife" />
       <h3>Arabian Knife</h3></a>
     </div>
+=======
+    <% @restaurants.each do |restaurant| %>
+      <div>
+         <a href="/restaurants/<%= restaurant.id %>"><img src= "<%= restaurant.url %>" alt="<%= restaurant.name %>" />
+          <h3><%= restaurant.name %></h3></a>
+      </div>
+>>>>>>> caf2b6846a8b0bbb8521e91935632ad7b9de83e4
     <% end %>
   </div>
 
