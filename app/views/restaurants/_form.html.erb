@@ -11,31 +11,37 @@
     </div>
   <% end %>
 
+<div class="text-center">
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :class=> "diner_input"  %>
   </div>
   <div class="field">
     <%= f.label :price %><br>
-    <%= f.text_field :price %>
+    <%= f.text_field :price, :class=> "diner_input"  %>
   </div>
   <div class="field">
     <%= f.label :food %><br>
-    <%= f.text_field :food %>
+    <%= f.text_field :food, :class=> "diner_input"  %>
   </div>
   <div class="field">
     <%= f.label :address %><br>
+<<<<<<< HEAD
     <%= f.text_field :address %>
   </div>
   <div class="field">
     <%= f.label :rating %><br>
     <%= f.text_field :rating %>
+=======
+    <%= f.text_field :address, :class=> "diner_input"  %>
+>>>>>>> 935f231774487a8a74b3eb612d0f890cc45f308a
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.text_field :description, :class=> "diner_input"  %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Add Diner', :class=> "btn btn-info btn-lg" %>
   </div>
+</div>
 <% end %>
