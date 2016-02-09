@@ -1,66 +1,41 @@
 // Place all the styles related to the Restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-  background-color: white;
-  margin: 0px;
-  padding: 0px;
-}
-
-img {
-  position: relative;
-  margin:  auto;
-  padding: 0;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  width:  325px;
-  height: 325px;
-  box-sizing: border-box;
-}
-
-a {
-  position: relative;
-  text-align: left;
-  margin: auto;
-  margin-bottom: 1cm;
-  padding: auto;
-  padding-right: 30px;
-  display: block;
-  float: left;
-  text-decoration: none;
-  overflow: hidden;
-  vertical-align: middle;
-  box-sizing: border-box;
-  width: 100%;
-
-}
-
 a:hover img {
   -webkit-filter: brightness(50%);
   filter: brightness(50%);
 }
 
-h3 {
-  position: absolute;
-  top: 35%;
-  z-index: 2;
-  font-size: 28px;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  width: 100%;
+div.caption {
+    width:100%;
+    bottom: .3rem;
+    position: absolute;
+    background: none;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: linear-gradient(rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+div.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin: auto;
+    margin-top: 3em;
+    padding:0;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 67%; /* aspect ratio */
+    float: inline;
+}
+
+div.thumbnail img {
   height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
-@media (min-width: 500px) {
-  a {
-    width: 50%;
-  }
-}
-
-@media (min-width: 800px) {
-  a {
-    width: 33.33333333%;
-  }
+div.caption h4 {
+    color: white !important;
+    -webkit-font-smoothing: antialiased;
 }

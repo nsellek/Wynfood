@@ -1,6 +1,4 @@
-<p id="notice"><%= notice %></p>
-
-<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<!-- <p id="notice"><%= notice %></p>
 
 <h1>Wynfood</h1>
 <h2>This is your list of Restaurants</h2>
@@ -8,58 +6,64 @@
   <div>
     <% @restaurants.each do |restaurant| %>
       <div>
-
-         <a href="#"><img src="http://gdurl.com/XmC2" alt="Arabian Knife" />
-          <h3>Arabian Knife</h3></a>
-<<<<<<< HEAD
-          <!-- <a href="#"><img src="http://gdurl.com/xG87" alt="Butcher Shop" />
-            <h3>Butcher Shop</h3></a>
-          <a href="#"><img src="http://gdurl.com/68Dp" alt="Coyo" />
-            <h3>Coyo</h3></a>
-          <a href="#"><img src="http://gdurl.com/S5my" alt="Della" />
-            <h3>Della Test Kitchen</h3></a>
-          <a href="#"><img src="http://gdurl.com/8--7" alt="Freshii" />
-            <h3><abbr title="Freshii"></abbr> Freshii</h3></a>
-          <a href="#"><img src="http://gdurl.com/uFUt" alt="Jimmy'z Kitchen"/>
-            <h3>Jimmy'z Kitchen</h3></a>
-          <a href="#"><img src="http://gdurl.com/yQMI" alt="Jucy Lu" />
-            <h3>Jucy Lu</h3></a>
-          <a href="#"><img src="http://gdurl.com/yk0V" alt="Jugo Fresh" />
-            <h3>Jugo Fresh</h3></a>
-          <a href="#"><img src="http://gdurl.com/Hd59" alt="Miami Cafe Boutqiue" />
-            <h3>Miami Cafe Boutique</h3></a>
-          <a href="#"><img src="http://gdurl.com/Q85O" alt="Pancho Taco" />
-            <h3>Pancho Taco</h3></a>
-          <a href="#"><img src="http://gdurl.com/fz2S" alt="Subs on the Run" />
-            <h3>Subs on the Run</h3></a>
-          <a href="#"><img src="http://gdurl.com/2GV9" alt="Suviche" />
-            <h3>Suviche</h3></a>
-          <a href="#"><img src="http://gdurl.com/Q6IB" alt="Wynwood Cafe" />
-            <h3>Wynwood Cafe</h3></a>
-          <a href="#"><img src="http://gdurl.com/TuuX" alt="Wynwood Diner" />
-            <h3>Wynwood Diner</h3></a>
-          <a href="#"><img src="http://gdurl.com/kx4S" alt="Zak the Baker" />
-            <h3>Zak the Baker</h3></a> -->
-        <!-- <td><%= restaurant.name %></td>
-        <td><%= restaurant.price %></td>
-        <td><%= restaurant.food %></td>
-        <td><%= restaurant.address %></td>
-<<<<<<< HEAD
-        <td><%= restaurant.rating %></td>
-        <td><%= restaurant.description %></td> -->
-        <!-- <td><%= link_to 'Show', restaurant %></td>
-=======
-        <td><%= restaurant.description %></td>
-        <td><%= link_to 'Show', restaurant %></td>
->>>>>>> 0addedbd94556bd32788aabdec47573f5aac5e73
-        <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
-        <td><%= link_to 'Remove', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-=======
->>>>>>> 935f231774487a8a74b3eb612d0f890cc45f308a
+<!--
       </div>
     <% end %>
   </div>
-
-<br>
-
-<%= link_to 'New Restaurant', new_restaurant_path %>
+br> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restaurant Image Overlay</title>
+    <meta content="width=device-width, initialscale=1" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.j" type="text/javascript">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div class="conainer" style="margin:20px;">
+        <div class=" col-sm-12 row">
+          <div class="col-sm-4">
+              <div class="col-sm-12 thumbnail text-center">
+                <a href=""><img alt="" class="img-responsive" src=
+                  "http://gdurl.com/XmC2"></a>
+                <a href="">  <div class="caption">
+                      <h4>Arabian Knife</h4>
+                  </div></a>
+              </div>
+          </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12 thumbnail text-center">
+                  <a href=""><img alt="" class="img-responsive" src=
+                    "http://gdurl.com/xG87"></a>
+                  <a href="">  <div class="caption">
+                        <h4>Butcher Shop</h4>
+                    </div></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12 thumbnail text-center">
+                  <a href=""><img alt="" class="img-responsive" src=
+                    "http://gdurl.com/68Dp"></a>
+                  <a href="">  <div class="caption">
+                        <h4>Coyo</h4>
+                    </div></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12 thumbnail text-center">
+                  <a href=""><img alt="" class="img-responsive" src=
+                    "http://gdurl.com/8--7"></a>
+                  <a href="">  <div class="caption">
+                        <h4>Freshii</h4>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- # <%= link_to 'New Restaurant', new_restaurant_path %> -->
