@@ -1,15 +1,46 @@
+<<<<<<< HEAD
 <!-- <p id="notice"><%= notice %></p>
+=======
+<body class="white">
+<div class = "restaurants-style">
 
-<h1>Wynfood</h1>
-<h2>This is your list of Restaurants</h2>
-<br>
+  <p id="notice"><%= notice %></p>
+>>>>>>> cf578d285fdc6c9276292fa60e0d2d69c197a12f
+
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+
+  <div class="col-md-6 col-md-offset-3">
+    <hr class= "hr">
+    <h1>Wynfood</h1>
+    <hr>
+  </div>
+<div>
+  <h2></h2>
+  <br>
   <div>
+<<<<<<< HEAD
+    <div>
+      <% @restaurants.each do |restaurant| %>
+    </div>
+
+    <a href="#"><img src="http://gdurl.com/XmC2" alt="Arabian Knife" />
+      <h3>Arabian Knife</h3></a>
+    </div>
+=======
     <% @restaurants.each do |restaurant| %>
       <div>
+<<<<<<< HEAD
 <!--
+=======
+         <a href="/restaurants/<%= restaurant.id %>"><img src= "<%= restaurant.url %>" alt="<%= restaurant.name %>" />
+          <h3><%= restaurant.name %></h3></a>
+>>>>>>> cf578d285fdc6c9276292fa60e0d2d69c197a12f
       </div>
+>>>>>>> caf2b6846a8b0bbb8521e91935632ad7b9de83e4
     <% end %>
   </div>
+<<<<<<< HEAD
 br> -->
 <!DOCTYPE html>
 <html lang="en">
@@ -67,3 +98,21 @@ br> -->
 </body>
 </html>
 <!-- # <%= link_to 'New Restaurant', new_restaurant_path %> -->
+=======
+
+</div>
+  <br>
+
+  <div class="col-md-6 col-md-offset-3" class= "buttons">
+    <div class= "restaurant_btn">
+      <%= link_to 'New Restaurant', new_restaurant_path, :class => 'btn btn-info btn-lg' %>
+    </div>
+
+    <div class= "home_btn">
+      <%= link_to 'Home Page', restaurants_path, :class => 'btn btn-info btn-lg' %>
+    </div>
+  </div>
+
+</div>
+</body>
+>>>>>>> cf578d285fdc6c9276292fa60e0d2d69c197a12f

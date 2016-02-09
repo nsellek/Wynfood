@@ -11,12 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div>
     <%= f.label :comment %><br>
     <%= f.text_field :comment %>
   </div>
+  <div>
+    <%= f.label :rating %><br>
+    <%= f.text_field :raiting %>
   <% if @restaurant.nil? %>
-    <div class="field">
+    <div>
       <%= f.lable :restaurant_id %><br>
       <%= f.text_field :restaurant_id %>
     </div>
@@ -25,7 +28,7 @@
   <% end %>
 
 
-  <div class="actions">
+  <div>
     <%= f.submit 'Add Review', :class=> "btn btn-info btn-lg" %>
   </div>
 <% end %>
