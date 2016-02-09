@@ -10,7 +10,7 @@
 
   <p>
     <strong>Price:</strong>
-    <%= @restaurant.price %>
+    <%= number_to_currency @restaurant.price %>
   </p>
 
   <p>
@@ -43,7 +43,7 @@
     <%= review.comment %>
   </p>
   <p>
-    Added on: <%= time_ago_in_words(review.created_at) %>
+    Added on: <%= time_ago_in_words(review.created_at) %> ago
   </p>
   <br>
   <% end %>
