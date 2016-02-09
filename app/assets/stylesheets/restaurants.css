@@ -1,16 +1,10 @@
 /*// Place all the styles related to the Restaurants controller here.
 // They will automatically be included in application.css.
-<<<<<<< HEAD:app/assets/stylesheets/restaurants.scss
 // You can use Sass (SCSS) here: http://sass-lang.com/
-<<<<<<< HEAD:app/assets/stylesheets/restaurants.scss
-=======
- body.white {
-  background-color: #ccc;
-=======
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
-body {
+body#index_page {
   background-color: white;
->>>>>>> caf2b6846a8b0bbb8521e91935632ad7b9de83e4:app/assets/stylesheets/restaurants.css
+
   margin: 0px;
   padding: 0px;
   background: none;
@@ -51,13 +45,13 @@ a {
   width: 100%;
 }
 
->>>>>>> cf578d285fdc6c9276292fa60e0d2d69c197a12f:app/assets/stylesheets/restaurants.css
+
 a:hover img {
   -webkit-filter: brightness(50%);
   filter: brightness(50%);
 }
 
-<<<<<<< HEAD:app/assets/stylesheets/restaurants.scss
+
 div.caption {
     width:100%;
     bottom: .3rem;
@@ -79,7 +73,7 @@ div.thumbnail {
     overflow: hidden;
     padding-bottom: 67%; /* aspect ratio */
     float: inline;
-=======
+
 h3 {
   /*position: absolute;*/
   top: 35%;
@@ -90,7 +84,7 @@ h3 {
   text-align: center;
   width: 100%;
   height: 100%;
->>>>>>> cf578d285fdc6c9276292fa60e0d2d69c197a12f:app/assets/stylesheets/restaurants.css
+
 }
 
 div.thumbnail img {
