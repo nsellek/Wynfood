@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 
-<div class="asset_style">
+<div class="home_button show_text">
   <hr>
     <p>
       <strong>Name:</strong>
@@ -25,7 +25,7 @@
 
     <p>
       <strong>Raiting:</strong>
-      <%= @restaurant.reviews.average(:raiting).to_f %>
+      <%= @average.to_f %>
     </p>
 
     <p>
@@ -37,13 +37,13 @@
 
 
 <h3 class= "review">Reviews:</h3>
-<div class='asset_style'>
+<div class='home_button show_text'>
  <% @restaurant.reviews.each do |review| %>
   <p>
     <%= review.comment %>
   </p>
   <p>
-    Added on: <%= review.created_at %>
+    Added on: <%= time_ago_in_words(review.created_at) %>
   </p>
   <br>
   <% end %>
@@ -54,8 +54,6 @@
 
   <br>
 
-<div class="col-md-6 col-md-offset-3">
-  <div class= "back_btn">
-      <%= button_to 'Home Page', controller: 'restaurants', action: 'home', :method => :get %>
-  </div>
+<div class="home_button">
+      <%= button_to 'Home Page', {controller: 'restaurants', action: 'home'}, class: 'btn btn-info btn-lg', :method => :get %>
 </div>

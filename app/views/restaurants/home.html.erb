@@ -1,65 +1,43 @@
-
-<header>
-<!-- <div class="pull-left"> -->
-<div class="col-md-6 col-md-offset-3">
-
-      <span class="home_title">
-          <hr>
-          <h1>Wynfood</h1>
-          <hr>
-  </span>
-</div>
-
-<div class="col-md-6 col-md-offset-3">
-    <p><span class="all_text"></span></p>
-      <div class="all_button">
-          <button class="btn btn-info btn-lg" type="button" name="button">Show All Diners</button>
-      </div>
+  <div class="col-md-6 col-md-offset-3">
+    <span class="home_title">
+      <hr>
+      <h1>Wynfood</h1>
+      <hr>
+    </span>
   </div>
-
-
-<div></div>
-    <div class="col-md-6 col-md-offset-3">
-      <p><div class="sort_text"> Sort By:</div><p>
-        <ul class="list-unstyled">
-          <li>
-            <div class="sort_button">
-                <div class="sort_button_price">
-                <button class="btn btn-info btn-lg" type="button" name="button">Price</button>
-              </div>
-                <div class="sort_button_rating">
-                <button class="btn btn-info btn-lg" type="button" name="button">Rating</button>
-              </div>
+  <div class="col-md-6 col-md-offset-3">
+    <p><span class="all_text"></span></p>
+    <div class="all_button">
+      <%= button_to 'Show All Diners', {controller: 'restaurants', action: 'index'},class: 'btn btn-info btn-lg', :method => :get %>
+    </div>
+  </div>
+  <div>
+  </div>
+  <div class="col-md-6 col-md-offset-3">
+    <p><div class="sort_text"> Sort By:</div><p>
+      <ul class="list-unstyled">
+        <li>
+          <div class="sort_button">
+            <div class="sort_button_price">
+              <%= button_to 'Price', {controller: 'restaurants', action: 'price'},class: 'btn btn-info btn-lg', :method => :get %>
             </div>
-          </li>
-        </ul>
-      </div>
-
-<div class="col-md-6 col-md-offset-3">
-    <p><span class="random_text">Not sure? Let us pick for you...</span></p>
+            <div class="sort_button_rating">
+              <button class="btn btn-info btn-lg" type="button" name="button">Rating</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+      <p><span class="random_text">Not sure? Let us pick for you...</span></p>
       <div class="random_button">
-          <%= button_to 'Random Place', restaurant_path(@restaurant_id), :class => 'btn btn-info btn-lg', :method => :get %>
+        <%= button_to 'Random Place', restaurant_path(@restaurant_id), :class => 'btn btn-info btn-lg', :method => :get %>
       </div>
       <hr>
-  </div>
-
-  <div class="col-md-6 col-md-offset-3">
-      <p><span class="diner_text"></span></p>
-        <div class="diner_button">
-            <%= button_to 'Add New Diner', new_restaurant_path, :class => 'btn btn-info btn-lg', :method => :get %>
-        </div>
     </div>
-
-</header>
-
-<section>
-
-
-</section>
-
-
-
-<footer>
-
-
-</footer>
+    <div class="col-md-6 col-md-offset-3">
+      <p><span class="diner_text"></span></p>
+      <div class="diner_button">
+        <%= button_to 'Add New Diner', new_restaurant_path, :class => 'btn btn-info btn-lg', :method => :get %>
+      </div>
+    </div>

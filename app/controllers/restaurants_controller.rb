@@ -11,6 +11,7 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1.json
   def show
     @review = Review.new
+    @average = @restaurant.reviews.average(:raiting)
   end
 
   # GET /restaurants/new
@@ -64,6 +65,10 @@ class RestaurantsController < ApplicationController
 
   def home
     @restaurant_id = Restaurant.all.sample.id
+  end
+
+  def price
+    @price = Restaurant.all.order(:price)
   end
 
   private

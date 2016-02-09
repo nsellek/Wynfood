@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :restaurants
   root 'restaurants#home'
 
+  get 'price' => 'restaurants#price'
   get 'review' => 'review#index'
   # root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
