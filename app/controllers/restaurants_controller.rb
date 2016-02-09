@@ -11,7 +11,7 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1.json
   def show
     @review = Review.new
-    @average = @restaurant.reviews.average(:raiting)
+    @average = @restaurant.reviews.average(:raiting).to_f.round(2)
   end
 
   # GET /restaurants/new
@@ -79,6 +79,6 @@ class RestaurantsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def restaurant_params
-      params.require(:restaurant).permit(:name, :price, :food, :address, :raiting, :description)
+      params.require(:restaurant).permit(:name, :price, :food, :address, :raiting, :description, :url)
     end
 end

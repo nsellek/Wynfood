@@ -9,7 +9,8 @@ h1 {
 }
 
 hr {
-  border-color: #000;
+  width: 25em;
+  border-color: #fff;
 }
 img {
   position: relative;

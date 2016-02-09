@@ -162,8 +162,8 @@ color: black;
 }
 
 .new_review {
-color: white;
-text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .new_buttons {
@@ -191,4 +191,8 @@ text-align: center;
 .new_button{
   text-align: center;
   margin-bottom: 1em;
+}
+
+.black{
+  color: black !important;
 }
