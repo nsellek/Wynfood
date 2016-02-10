@@ -192,3 +192,18 @@ text-align: center;
   text-align: center;
   margin-bottom: 1em;
 }
+
+
+
+/******************************************
+             review's
+******************************************/
+
+
+.review_input {
+color: black;
+}
+
+.home_button hr {
+  width: 500px;
+}

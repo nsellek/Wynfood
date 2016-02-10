@@ -1,10 +1,14 @@
-<h2>Wynfood</h2>
+<h2></h2>
 <% @restaurants.each do |restaurant| %>
+
+
   <a href="/restaurants/<%= restaurant.id %>" class="show_img">
-    <img alt="<%= restaurant.name %>" class="img-responsive" src="<%= restaurant.url %>">
-    <h4>
+    <img alt="<%= restaurant.name %>" src="<%= restaurant.url %>">
+    <div class="image_title">
+      <h4>
       <%= restaurant.name %>
     </h4>
+  </div>
   </a>
 <% end %>
 <div class="index_button">

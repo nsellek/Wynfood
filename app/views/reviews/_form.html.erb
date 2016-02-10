@@ -13,12 +13,12 @@
 
   <div>
     <%= f.label :comment %><br>
-    <%= f.text_field :comment %>
+    <%= f.text_field :comment, :class => "review_input" %>
   </div>
   <br>
   <div>
     <%= f.label :rating %><br>
-    <%= f.text_field :raiting %>
+    <%= f.text_field :raiting, :class => "review_input" %>
   </div>
   <% if @restaurant.nil? %>
     <div>
