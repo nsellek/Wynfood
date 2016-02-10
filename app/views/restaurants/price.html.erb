@@ -1,34 +1,19 @@
-
-<body id='index_page'>
-  <% @price.each do |restaurant| %>
-  <div class="conainer" style="margin:20px;">
-    <div class=" col-sm-12 row">
-      <div class="col-sm-4">
-        <div class="col-sm-12 thumbnail text-center">
-          <a href="/restaurants/<%= restaurant.id %>">
-            <img alt="<%= restaurant.name %>" class="img-responsive" src="<%= restaurant.url %>">
-          </a>
-          <a href="/restaurants/<%= restaurant.id %>">
-            <div class="caption">
-              <h4>
-                <%= restaurant.name %>
-              </h4>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+<h2>Wynfood</h2>
+<br>
+<% @price.each do |restaurant| %>
+  <a href="/restaurants/<%= restaurant.id %>" class="show_img">
+    <img alt="<%= restaurant.name %>" src="<%= restaurant.url %>">
+    <h4>
+      <%= restaurant.name %>
+    </h4>
+  </a>
+<% end %>
+<div class="index_button">
+  <br>
+  <div class="new_button">
+    <%= button_to 'New Restaurant', new_restaurant_path, :class => 'btn btn-info btn-lg', :method => :get %>
   </div>
-  <% end %>
-  <div>
-    <br>
-    <div class="col-md-6 col-md-offset-3" class= "buttons">
-      <div class= "restaurant_btn">
-        <%= link_to 'New Restaurant', new_restaurant_path, :class => 'btn btn-info btn-lg' %>
-      </div>
-      <div class= "home_btn">
-        <%= link_to 'Home Page', {controllers: 'restaurants', action: 'home'}, class: 'btn btn-info btn-lg' %>
-      </div>
-    </div>
+  <div class="home_button">
+    <%= button_to 'Home Page', {controllers: 'restaurants', action: 'home'}, class: 'btn btn-info btn-lg', :method => :get %>
   </div>
-</body>
+</div>

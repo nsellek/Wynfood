@@ -7,7 +7,7 @@ header {
 }
 
 body {
-background: url("https://images.unsplash.com/photo-1430931071372-38127bd472b8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e38011b03de532fe2203de8e4696d357");
+background-image: url("Background.png");
 background-size: cover;
 background-repeat: no-repeat;
 width: 100%;
@@ -162,8 +162,8 @@ color: black;
 }
 
 .new_review {
-color: white;
-text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .new_buttons {
@@ -195,6 +195,7 @@ text-align: center;
 
 
 
+
 /******************************************
              review's
 ******************************************/
@@ -206,4 +207,8 @@ color: black;
 
 .home_button hr {
   width: 500px;
+}
+
+.black{
+  color: black !important;
 }

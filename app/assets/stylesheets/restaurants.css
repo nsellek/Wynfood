@@ -9,15 +9,11 @@ h1 {
 }
 
 hr {
+  width: 25em;
   border-color: #fff;
 }
 img {
-  position: relative;
-  margin:  auto;
-  padding: 0;
-  z-index: 1;
   display: block;
-  width: 100%;
   width:  325px;
   height: 325px;
   box-sizing: border-box;

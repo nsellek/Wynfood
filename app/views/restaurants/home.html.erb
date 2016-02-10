@@ -22,7 +22,7 @@
               <%= button_to 'Price', {controller: 'restaurants', action: 'price'},class: 'btn btn-info btn-lg', :method => :get %>
             </div>
             <div class="sort_button_rating">
-              <button class="btn btn-info btn-lg" type="button" name="button">Rating</button>
+              <%= button_to "Rating", {controller: 'restaurants', action: 'rating'}, class: 'btn btn-info btn-lg', :method => :get %>
             </div>
           </div>
         </li>

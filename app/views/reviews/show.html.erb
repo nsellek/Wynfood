@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div class="show_text home_button">
 <p>
   <strong>Comment:</strong>
   <%= @review.comment %>
@@ -10,9 +10,10 @@
   <%= @review.restaurant.name %>
 </p>
 
-<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Edit', edit_review_path(@review) %>
 <% if @review.restaurant.nil? %>
   <%= link_to 'Back', reviews_path %>
 <% else %>
-  <%= link_to 'Back', @review.restaurant %>
+  <%= button_to 'Back', @review.restaurant,class: 'btn btn-info btn-lg', :method => :get %>
 <% end %>
+</div>
