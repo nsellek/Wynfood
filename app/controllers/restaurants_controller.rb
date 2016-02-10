@@ -4,14 +4,14 @@ class RestaurantsController < ApplicationController
   # GET /restaurants
   # GET /restaurants.json
   def index
-    @restaurants = Restaurant.all
+    @restaurants = Restaurant.all.order(:id)
   end
 
   # GET /restaurants/1
   # GET /restaurants/1.json
   def show
     @review = Review.new
-    @average = @restaurant.reviews.average(:raiting).to_f.round(2)
+    @restaurant.update(average: @restaurant.reviews.average(:raiting).to_f.round(2))
   end
 
   # GET /restaurants/new
@@ -69,6 +69,10 @@ class RestaurantsController < ApplicationController
 
   def price
     @price = Restaurant.all.order(:price)
+  end
+
+  def rating
+    @rating = Restaurant.all.order(average: :desc)
   end
 
   private
