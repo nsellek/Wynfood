@@ -64,7 +64,7 @@ class RestaurantsController < ApplicationController
   end
 
   def home
-    @restaurant_id = Restaurant.all.sample.id
+    # @restaurant_id = Restaurant.all.sample.id
   end
 
   def price
@@ -73,6 +73,12 @@ class RestaurantsController < ApplicationController
 
   def rating
     @rating = Restaurant.all.order(average: :desc)
+  end
+
+  def random
+    @random = Restaruant.all.sample.id
+
+    redirect_to estaurant_path(@random)
   end
 
   private

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'price' => 'restaurants#price'
   get 'review' => 'review#index'
   get 'rating' => 'restaurants#rating'
+  get 'random' => 'restaurants#random'
   # root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
